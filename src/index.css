@@ -1,0 +1,253 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+.list{
+  display: flex;
+  flex-direction: column;
+  
+ 
+}
+.link{
+  color: white;
+}
+.App{
+  background-color:hsl(214, 47%, 23%) ;
+  height:100vh;
+  display: grid;
+}
+.main-cont{
+  margin:20px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.table{
+border: 1px solid white;
+
+width:500px;
+height: 100px;
+border-radius: 10px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding-inline-start: 10px;
+padding-inline-end: 10px;
+margin: 20px auto;
+
+}
+ h3{
+color: aliceblue;
+cursor: pointer;
+}
+.scores{
+  background-color: aliceblue;
+  width: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 60px;
+  border-radius: 5px;
+}
+h5{
+  color: lightseagreen;
+  font-size: 1.2rem;
+}
+h2{
+  color: blueviolet;
+  font-size: 2.2rem;
+}
+.triangle{
+  position: relative;
+}
+.rock{
+  background-color: aliceblue;
+  border :10px solid rgb(189, 6, 6);
+  border-radius: 100%;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: absolute;
+  bottom: 0;
+  right: 35%;
+}
+.rock2{
+  background-color: aliceblue;
+  border :10px solid rgb(189, 6, 6);
+  border-radius: 100%;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.battle{
+ 
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.scissors{
+  background-color: aliceblue;
+  border :10px solid yellowgreen;
+  border-radius: 100%;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: absolute;
+  top:-10%;
+  right: -10%;
+}
+.scissors2{
+  background-color: aliceblue;
+  border :10px solid yellowgreen;
+  border-radius: 100%;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.paper{
+  background-color: aliceblue;
+  border :10px solid blue;
+  border-radius: 100%;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: absolute;
+  top: -10%;
+  left: -10%;
+}
+.paper2{
+  background-color: aliceblue;
+  border :10px solid blue;
+  border-radius: 100%;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.rules{
+  border: 2px solid white;
+  width: 150px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  position: absolute;
+  bottom: 10%;
+  right: 5%;
+}
+.rules-sticker{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background-color: aliceblue;
+  width: 30rem;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  gap:20px;
+  visibility: hidden;
+}
+.close-text{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding-inline-start: 20px;
+  padding-inline-end: 20px;
+  
+}
+h4{
+  font-size: 25px;
+  color: rgb(76, 76, 201);
+}
+.close{
+  cursor: pointer;
+}
+.visible{
+ visibility: visible;
+}
+.hide{
+  display: none;
+}
+.active{
+  display: block;
+}
+.picker{
+  display: flex;
+  justify-content: space-between;
+  width: 40rem;
+}
+.fight{
+  width: 40rem;
+  display: flex;
+  justify-content: space-between;
+}
+span{
+  color: white;
+  font-size: 25px;
+  font-weight: 900;
+}
+button{
+  width: 100%;
+  height: 50px;
+  letter-spacing: 2px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.losespan{
+  color: red;
+}
+.winspan{
+  color: rgb(15, 235, 15);
+}
+@media(max-width:500px){
+  .picker{
+    width:100%
+  }
+  .fight{
+    width: 100%;
+  }
+  .rules{
+    
+    bottom: 0;
+    right: 30%;
+  }
+  .troika{
+    width: 100%;
+  }
+  .triangle{
+    width:85%;
+  }
+  .rules-sticker{
+    width: 100%;
+  }
+.table{
+  width: 100%;
+}
+}
